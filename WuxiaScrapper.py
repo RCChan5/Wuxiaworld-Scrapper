@@ -21,14 +21,14 @@ def link_list(index):
   r=requests.get(index)
   soup = BeautifulSoup(r.content, 'html.parser')
   links = soup.find_all('a')
-  print("website index obtained")
+  print("website index obtained : "+book)
 #adding individual urls into the listl
   for link in links:
     if (book) in (link.get("href")):
         #dictionary made holds link and chapter name
       d["https://www.wuxiaworld.com"+link.get("href")] = link.get_text()
   print("dictionary created")
-  time.sleep(1)
+  #time.sleep(5)
   return d
 ###################################################################
 ##obtains the chapters body
@@ -36,7 +36,7 @@ def get_content(url):
   r = requests.get(url)
   soup = BeautifulSoup(r.content, 'html.parser')
   content=soup.find_all("div","fr-view")
-  print("Chapter obtained")
+  print("Chapter obtained" + url)
   return (max(content, key=len).get_text())
 ###################################TEXT FILE MAKER################################
 def Scrapper(index):
@@ -72,12 +72,13 @@ def Scrapper(index):
         file = open(path + '/' +newPath, 'w', encoding="utf-8")
         file.write(body)
         file.close()
-        print(path)
+        #print(path)
         #print(d[key]+" has been made")
-        #time.sleep(3)
+        time.sleep(1)
         #print("-----------------------------------------")
       else:
-        print(d[key]+"exsists")
+        #print(d[key]+"exsists")
+        pass
 #####################################
 choice=0
 
