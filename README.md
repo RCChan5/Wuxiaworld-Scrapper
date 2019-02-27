@@ -7,6 +7,7 @@ Notes:
   
 Tutorial:
 When using this script you will be given the options to 1) Update chapters or 2) Add a new book to index.
+
 In option 1 (recomended) The script will check the WuxiaIndex.txt file for the books you want to scrape. 
     Be sure to have the WuxiaIndex.txt file in your working directory along with the WuxiaScrapper.py file. 
     The WuxiaIndex.txt file should contain your selected stories table of contents in each line (see provided file for examples)
