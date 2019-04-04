@@ -1,5 +1,5 @@
 # Wuxiaworld-Scrapper
-A Wuxiaworld Scrapper I created using Requests and BeautifulSoup to create .txt files of each chapter for the use in text to speech programs. This Scrapper is able to scrape any book on wuxiaworld and allows or chapter updates on series you already have downloaded. This program is inteded to be used in conjunction with my NovelMerger program which sorts and creates 1 text file for a given series. 
+A Wuxiaworld Scrapper I created using Requests and BeautifulSoup to create .txt files of each chapter for the use in text to speech programs. This Scrapper is able to scrape any book on wuxiaworld.com and allows or chapter updates on series you already have downloaded. This program is inteded to be used in conjunction with my NovelMerger program which sorts and creates 1 text file for a given series. 
 
 Notes:
   There is a 1 second delay on this scrapper.
