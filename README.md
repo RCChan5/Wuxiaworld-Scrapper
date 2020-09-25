@@ -18,7 +18,7 @@ In option 2: The script will request that you link the table of contents of your
 
 BUGS:
 - While Scrapping Archfiend on Wuxiaworld program crashes.
-(contact me if any is found)
+
 
 
 FUTURE WORK:
